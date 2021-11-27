@@ -22,7 +22,7 @@
                 <a lang="en" class="link header-web-logo" href="./index.html">Web<span
                         class="header-Studio-logo">Studio</span></a>
                 <ul class="list header-list">
-                    <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
+                    <li class="header-item"><a class="link header-link current" href="./index.html">Студия</a></li>
                     <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
                     <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
                 </ul>
@@ -46,7 +46,8 @@
             <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             </div>
-            <div class="hero-container-btn"><button class="hero-btn" type="button">Заказать услугу</button>
+            <div class="hero-container-btn"><button class="hero-btn" type="button" data-modal-open>
+                    Заказать услугу</button>
             </div>
         </section>
         <section class="benefits">
@@ -55,7 +56,8 @@
                     <li class="benefits-item">
                         <div class="benefits-item-icon">
                             <svg class="benefits-icon" width="70" height="70">
-                                <use href="./image/icons.svg#icon-antenna"></use></svg>
+                                <use href="./image/icons.svg#icon-antenna"></use>
+                            </svg>
                         </div>
                         <h3 class="benefits-title">Внимание к деталям</h3>
                         <p class="benefits-text">Идейные соображения, а также начало повседневной работы по формированию
@@ -64,7 +66,8 @@
                     <li class="benefits-item">
                         <div class="benefits-item-icon">
                             <svg class="benefits-icon" width="70" height="70">
-                                <use href="./image/icons.svg#icon-clock"></use></svg>
+                                <use href="./image/icons.svg#icon-clock"></use>
+                            </svg>
                         </div>
                         <h3 class="benefits-title">Пунктуальность</h3>
                         <p class="benefits-text">Задача организации, в особенности же рамки и место обучения кадров
@@ -74,7 +77,8 @@
                     <li class="benefits-item">
                         <div class="benefits-item-icon">
                             <svg class="benefits-icon" width="70" height="70">
-                                <use href="./image/icons.svg#icon-diagram"></use></svg>
+                                <use href="./image/icons.svg#icon-diagram"></use>
+                            </svg>
                         </div>
                         <h3 class="benefits-title">Планирование</h3>
                         <p class="benefits-text"> Равным образом консультация с широким активом в значительной степени
@@ -83,7 +87,8 @@
                     <li class="benefits-item">
                         <div class="benefits-item-icon">
                             <svg class="benefits-icon" width="70" height="70">
-                                <use href="./image/icons.svg#icon-astronaut"></use></svg>
+                                <use href="./image/icons.svg#icon-astronaut"></use>
+                            </svg>
                         </div>
                         <h3 class="benefits-title">Современные технологии</h3>
                         <p class="benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых
@@ -99,17 +104,17 @@
                     <li class="about-item">
                         <img class="about-item-img" src="./image/img1.jpg" alt="варианты работы за компьютером"
                             width="370" height="294" />
-                            <div class="about-item-text">Десктопные приложения</div>
+                        <div class="about-item-text">Десктопные приложения</div>
                     </li>
                     <li class="about-item">
                         <img class="about-item-img" src="./image/img2.jpg" alt="варианты работы за компьютером"
                             width="370" height="294" />
-                            <div class="about-item-text">Мобильные приложения</div>
+                        <div class="about-item-text">Мобильные приложения</div>
                     </li>
                     <li class="about-item">
                         <img class="about-item-img" src="./image/img3.jpg" alt="варианты работы за компьютером"
                             width="370" height="294" />
-                            <div class="about-item-text">Дизайнерские решения</div>
+                        <div class="about-item-text">Дизайнерские решения</div>
                     </li>
                 </ul>
             </div>
@@ -379,6 +384,16 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" width="11" height="11">
+                    <use href="./image/icons.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
